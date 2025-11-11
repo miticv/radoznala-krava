@@ -49,7 +49,10 @@ jobs:
           app_location: "/" # Path to your app's source code
           api_location: "" # Optional: path to API code
           output_location: "dist/apps/radoznala-krava" # Adjust based on your Nx output path; default is usually dist/apps/<app-name>
-          github_id_token: ${{ steps.idtoken.outputs.result }}
+          #github_id_token: ${{ steps.idtoken.outputs.result }}
+        env:
+          SKIP_DEPLOY_ON_MISSING_SECRETS: true
+
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
