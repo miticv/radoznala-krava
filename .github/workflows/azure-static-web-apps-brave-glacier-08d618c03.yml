@@ -46,9 +46,9 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_GLACIER_08D618C03 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/browser" # Path to your app's source code
+          app_location: "/" # Path to your app's source code
           api_location: "" # Optional: path to API code
-          output_location: "dist/apps/radoznala-krava" # Adjust based on your Nx output path; default is usually dist/apps/<app-name>
+          output_location: "/dist/apps/radoznala-krava" # Adjust based on your Nx output path; default is usually dist/apps/<app-name>
           github_id_token: ${{ steps.idtoken.outputs.result }}
         env:
           SKIP_DEPLOY_ON_MISSING_SECRETS: true
