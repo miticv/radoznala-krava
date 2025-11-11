@@ -19,7 +19,8 @@
           {
             "glob": "**/*",
             "input": "apps/radoznala-krava/public"
-          }
+          },
+          "apps/radoznala-krava/src/staticwebapp.config.json"
         ],
         "styles": ["apps/radoznala-krava/src/styles.scss"]
       },
