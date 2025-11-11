@@ -1,0 +1,9 @@
+{
+  "name": "radoznala-krava-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/radoznala-krava-e2e/src",
+  "implicitDependencies": ["radoznala-krava"],
+  "// targets": "to see all targets run: nx show project radoznala-krava-e2e --web",
+  "targets": {}
+}

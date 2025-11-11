@@ -1,0 +1,32 @@
+<main class="home container">
+  <header>
+    <h1>radoznala-krava</h1>
+    <p class="tagline">A small project — welcome! Explore important information below.</p>
+  </header>
+
+  <section class="links">
+    <a class="card" routerLink="/privacystatement">Privacy Statement</a>
+    <a class="card" routerLink="/termsofservice">Terms of Service</a>
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      This is the home page for the radoznala-krava application. It contains
+      links to the privacy statement and terms of service. Replace this copy
+      with your project's real content.
+    </p>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>
+
+<style>
+  .container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+  header h1 { font-size: 2rem; margin: 0; }
+  .tagline { color: #555; margin-top: 0.25rem; }
+  .links { display: flex; gap: 1rem; margin: 1.5rem 0; }
+  .card { display: inline-block; padding: 1rem 1.25rem; background: #f5f7fb; border-radius: 8px; color: #0b5fff; text-decoration: none; }
+  .card:hover { transform: translateY(-2px); }
+  .about h2 { margin-top: 0; }
+</style>
