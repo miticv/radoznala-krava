@@ -62,7 +62,7 @@ jobs:
           github_id_token: ${{ steps.idtoken.outputs.result }}
         env:
           SKIP_DEPLOY_ON_MISSING_SECRETS: true
-          RUN_BUILD_COMMAND: "npx nx build"
+          RUN_BUILD_COMMAND: "npm ci && npx nx build"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

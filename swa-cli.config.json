@@ -3,7 +3,9 @@
   "configurations": {
     "radoznala-krava": {
       "appLocation": "dist\\apps\\radoznala-krava\\browser",
-      "outputLocation": "."
+      "outputLocation": ".",
+      "apiLanguage": "node",
+      "apiVersion": "v22.16.0"
     }
   }
 }
